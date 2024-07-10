@@ -1,59 +1,21 @@
 <!DOCTYPE html>
 <html>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background-color: #103025; /* Cor verde oliva escura */
-    padding: 0;
-    position: relative;
-    height: 150px; /* Altura da barra */
-    display: flex;
-    align-items: center;
-    padding-left: 20px; /* Espaçamento à esquerda */
-  }
-  header .logo-container {
-    max-width: 100%;
-    height: auto;
-  }
-  main {
-    padding: 20px;
-  }
-  h1 {
-    color: #333;
-  }
-  button {
-    margin: 5px;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #0056b3;
-  }
-</style>
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doenças Infecto-Contagiosas</title>
-    <?!= HtmlService.createHtmlOutputFromFile('styles').getContent(); ?>
-  </head>
-  <body>
-    <header>
-      <div class="logo-container">
-        <iframe src="https://drive.google.com/file/d/1uiondkDm_k2-FVuS2IaXlk_rs4-QH5M3/preview" width="270" height="130" frameborder="0" scrolling="no"></iframe>
-      </div>
-    </header>
-    <main>
-      <h1>Informações sobre Infectologia e Cardiologia</h1>
-      <div id="complementos"></div>
-      <?!= HtmlService.createHtmlOutputFromFile('scripts').getContent(); ?>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doenças Infecto-Contagiosas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <!-- A imagem será carregada via CSS -->
+    </div>
+  </header>
+  <main>
+    <h1>Disciplina Infectologia</h1>
+    <div id="complementos"></div>
+    <?!= HtmlService.createHtmlOutputFromFile('scripts').getContent(); ?>
+  </main>
+</body>
 </html>
