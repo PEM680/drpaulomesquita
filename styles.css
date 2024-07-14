@@ -5,7 +5,7 @@ body {
   }
   
   header {
-    background-color: hsl(30, 86%, 61%); /* Cor verde oliva escura */
+    background-color: hsl(30, 86%, 51%); /* Cor verde oliva escura */
     padding: 0;
     position: relative;
     height: 150px; /* Altura da barra */
