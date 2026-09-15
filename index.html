@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doenças Infecto-Contagiosas</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dr. Paulo Eduardo de Mesquita</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #fff; }
+    header { display: flex; justify-content: flex-end; padding: 16px 24px; }
+    .logo { display: block; width: min(420px, 100%); height: auto; }
+    @media (max-width: 480px) { header { padding: 12px; } }
+  </style>
 </head>
 <body>
   <header>
-    <div class="logo-container">
-      <!-- A imagem será carregada via CSS -->
-    </div>
+    <img class="logo" src="logo.png" width="684" height="372" alt="Dr. Paulo Eduardo de Mesquita — Infectologia e Terapia Intensiva — CRM 60550">
   </header>
-  <main>
-    <h1>Disciplina Infectologia e Terapia Intensiva</h1>
-    <div id="complementos"></div>
-    <?!= HtmlService.createHtmlOutputFromFile('scripts').getContent(); ?>
-  </main>
+  <main id="app"></main>
 </body>
 </html>
